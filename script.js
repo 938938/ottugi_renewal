@@ -80,13 +80,15 @@ $(document).ready(function(){
 
     //sns컨텐츠 내려오는 부분
 
-    $(".section5 .sns>li").stop().fadeOut(300,function(){
-      $(".section5 .sns>li").eq(sn).stop().fadeIn(function(){
-        $(".section5 .sns>li").eq(sn).stop().animate({"top":"10px"},300);
-      });
-      $(".section5 .sns>li").stop().animate({"top":"-290px"});
-    });
     // $(".section5 .sns>li").stop().animate({"top":"-290px"});
     // $(".section5 .sns>li").eq(sn).stop().animate({"top":"10px"});
+
+    $(".section5 .sns>li").stop().fadeOut(100,function(){
+      $(".section5 .sns>li").stop().animate({"top":"-290px"},100,function(){
+        $(".section5 .sns>li").stop().fadeIn(100,function(){
+          $(".section5 .sns>li").eq(sn).stop().animate({"top":"10px"},300);
+        });  
+      });
+    });
   });
 });
