@@ -51,6 +51,19 @@ $(document).ready(function(){
     });
   });
 
+  var food = $(".section3").offset().top;
+  var nextfood = $(".section4").offset().top;
+
+  $(".section4 .big").hide();
+  $(window).scroll(function(){
+    if($("body,html").scrollTop() >= food && $("body,html").scrollTop() <= nextfood){
+      $(".section4 .big").fadeIn(500);
+    } else {
+      $(".section4 .big").fadeOut(500);
+    }
+  });
+
+
   var m = $(".section4 .right .menu li.on").index();
   
   $(".section4 .right .menu li").click(function(){
@@ -91,4 +104,5 @@ $(document).ready(function(){
       });
     });
   });
+
 });
