@@ -251,8 +251,11 @@ header .top .chat:hover{
 .section2 .info .news .news_cont div{
   width:400px; height:150px; position:relative;
 }
+.section2 .info .news .news_cont div p a{
+  font-family:'맑은 고딕';
+}
 .section2 .info .news .news_cont div span{
-  position:relative; top:20px; left:300px;
+  position:relative; top:25px; left:300px;
   font-size:13px;
 }
 .section3{
