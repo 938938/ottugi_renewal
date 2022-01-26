@@ -37,6 +37,13 @@ $(document).ready(function(){
     });
   } );
 
+  $(".section3 .cont li").mouseenter(function(){
+    $(this).stop().animate({"margin-top":"30px"});
+  });
+  $(".section3 .cont li").mouseleave(function(){
+    $(this).stop().animate({"margin-top":"10px"});
+  });
+
   $(".section3 .btn .prev").click(function(){
     $(".section3 .cont").stop().animate({"margin-left":"0%"},500,function(){
       $(".section3 .cont li").last().prependTo(".section3 .cont");
