@@ -23,17 +23,17 @@ $(document).ready(function(){
     slide();
   },5000);
 
-  var second = $(".section2").offset().top;
-  var thirth = $(".section3").offset().top;
-  var fourth = $(".section4").offset().top;
-  var fifth = $(".section5").offset().top;
-
   function slide(){
     $(".indicator li").removeClass("on");
     $(".indicator li").eq(i).addClass("on");
     $(".main_img li").stop().fadeOut(500);
     $(".main_img li").eq(i).stop().fadeIn(500);
   };
+  
+  var second = $(".section2").offset().top;
+  var thirth = $(".section3").offset().top;
+  var fourth = $(".section4").offset().top;
+  var fifth = $(".section5").offset().top;
 
   $(window).scroll(function(){
     if($("body,html").scrollTop() >= second-100 && $("body,html").scrollTop() <= thirth-100){
@@ -53,9 +53,11 @@ $(document).ready(function(){
 
   $(window).scroll(function(){
     if($("body,html").scrollTop() >= thirth-100 && $("body,html").scrollTop() <= fourth-100){
-      $(".section3 .title").stop().animate({"left":"20%"},300);
+      // $(".section3 .title").stop().animate({"margin-top":"-300px"},500);
+      $(".section3 .title").stop().fadeIn(500);
     } else {
-      $(".section3 .title").stop().animate({"left":"-20%"},300);
+      // $(".section3 .title").stop().animate({"margin-top":"-250px"},500);
+      $(".section3 .title").stop().fadeOut(500);
     }
   });
 

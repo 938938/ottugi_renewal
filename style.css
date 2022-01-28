@@ -163,10 +163,10 @@ header .top .chat:hover{
   background-image:url(images/main02.jpg);
 }
 .section1 .main .main_img li:nth-child(3){
-  background-image:url(images/main01.jpg);
+  background-image:url(images/main06.jpg);
 }
 .section1 .main .main_img li:nth-child(4){
-  background-image:url(images/main04.jpg);
+  background-image:url(images/main05.jpg);
 }
 .section1 .main .main_img li.on a{
   height:100%; display:block;
@@ -268,7 +268,8 @@ header .top .chat:hover{
   overflow:hidden;
 }
 .section3 .title{
-  position:absolute; left:-20%; top:50%; margin-top:-300px;
+  position:absolute; left:20%; top:50%; margin-top:-300px;
+  display:none;
 }
 .section3 .title h2{font-size:50px;}
 .section3 .title p{margin-top:10px; font-size:25px;}
